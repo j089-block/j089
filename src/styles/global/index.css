@@ -1,0 +1,82 @@
+@import "./variables.css";
+
+@font-face {
+  font-family: "PoppinsBold";
+  src: url("../../assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PoppinsSemiBold";
+  src: url("../../assets/fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PoppinsRegular";
+  src: url("../../assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PoppinsMedium";
+  src: url("../../assets/fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PoppinsRegular", sans-serif;
+}
+
+:focus {
+  outline: none;
+}
+
+:root {
+  background: var(--bgColor);
+  color: var(--mainColorText);
+}
+
+h1 {
+  font-family: "PoppinsBold", sans-serif;
+}
+
+.menuOpenedMain {
+  height: 100vh;
+  filter: blur(5px);
+}
+
+.menuOpenedBody {
+  overflow: hidden;
+}
+
+section {
+  max-width: 1440px;
+  margin: 50px auto;
+}
+
+input {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &::placeholder {
+    font-size: 18px;
+    color: #999;
+  }
+}
